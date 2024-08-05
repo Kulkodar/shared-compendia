@@ -1,0 +1,64 @@
+import { AmbientLightData } from './ambient-light-data';
+import { AmbientSoundData } from './ambient-sound-data';
+import { DocumentStats } from './document-stats';
+import { DrawingData } from './drawing-data';
+import { JournalEntryData } from './journal-entry-data';
+import { MeasuredTemplateData } from './measured-template-data';
+import { NoteData } from './note-data';
+import { PlaylistData } from './playlist-data';
+import { PlaylistSoundData } from './playlist-sound-data';
+import { TileData } from './tile-data';
+import { TokenData } from './token-data';
+import { WallData } from './wall-data';
+
+interface SceneData {
+	_id: string;
+	name: string;
+	active: boolean;
+	navigation: boolean;
+	navOrder: number;
+	navName: string;
+	background: object;
+	foreground: string;
+	foregroundElevation: number;
+	thumb: string;
+	width: number;
+	height: number;
+	padding: number;
+	initial: {
+		x: number;
+		y: number;
+		scale: number;
+	};
+	backgroundColor: string;
+	grid: GridData;
+	tokenVision: boolean;
+	darkness: number;
+	fogExploration: boolean;
+	fogReset: number;
+	fogOverlay: string;
+	fogExploredColor: string;
+	fogUnexploredColor: string;
+	environment: object;
+	cycle: boolean;
+	base: object;
+	drawings: DrawingData[];
+	tiles: TileData[];
+	tokens: TokenData[];
+	lights: AmbientLightData[];
+	notes: NoteData[];
+	sounds: AmbientSoundData[];
+	templates: MeasuredTemplateData[];
+	walls: WallData[];
+	playlist: PlaylistData;
+	playlistSound: PlaylistSoundData;
+	journal: JournalEntryData;
+	weather: string;
+	folder: string;
+	sort: number;
+	ownership: object;
+	flags: object;
+	_stats: DocumentStats;
+}
+
+export { type SceneData };

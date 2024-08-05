@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"target": "ES2022",
+		"lib": ["DOM", "ES6", "ES2022"],
+		"resolveJsonModule": true,
+		"allowUmdGlobalAccess": true,
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"baseUrl": ".",
+		"paths": {},
+		"esModuleInterop": true,
+		"typeRoots": ["node_modules/@types"],
+		"skipLibCheck": true
+	}
+}

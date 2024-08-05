@@ -1,0 +1,38 @@
+{
+	"name": "kulkdars-shared-compendia",
+	"description": "A simple module to hold all shared comendia.",
+	"type": "module",
+	"scripts": {
+		"package": "npm run build && gulp package",
+		"build": "npm run clean && npm run build:packs && gulp build",
+		"build:packs": "tsx ./build/build-packs.ts",
+		"clean": "tsx ./build/clean.ts",
+		"link": "tsx ./build/link-foundry.ts",
+		"extractPacks": "tsx ./build/extract-packs.ts",
+		"extractSystemPacks": "tsx ./build/extract-system-packs.ts",
+		"lint": "npx eslint .",
+		"format": "prettier . --write"
+	},
+	"author": "Kulkodar",
+	"license": "GPL-3.0-only",
+	"devDependencies": {
+		"@eslint/js": "^9.8.0",
+		"@types/eslint__js": "^8.42.3",
+		"@types/gulp": "^4.0.17",
+		"@types/jquery": "^3.5.30",
+		"@types/node": "^20.14.2",
+		"@types/slug": "^5.0.8",
+		"archiver": "^7.0.1",
+		"classic-level": "^1.3.0",
+		"eslint": "^9.8.0",
+		"eslint-config-prettier": "^9.1.0",
+		"gulp": "^5.0.0",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"prettier": "3.3.3",
+		"remeda": "^1.43.0",
+		"slug": "^9.1.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.5.4",
+		"typescript-eslint": "^8.0.0"
+	}
+}

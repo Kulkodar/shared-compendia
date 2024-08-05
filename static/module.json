@@ -1,0 +1,51 @@
+{
+	"id": "kulkodars-shared-compendia",
+	"title": "Kulkodar's shared compendia",
+	"description": "A simple module that holds various things.",
+	"version": "dev",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12",
+		"maximum": "12"
+	},
+	"relationships": {
+		"systems": [
+			{
+				"id": "pf2e",
+				"type": "system",
+				"compatibility": {}
+			}
+		]
+	},
+	"authors": [
+		{
+			"name": "Kulkodar",
+			"flags": {}
+		}
+	],
+	"esmodules": ["main.js"],
+	"packs": [
+		{
+			"name": "adventures",
+			"label": "Adventures",
+			"path": "packs/adventures",
+			"type": "Adventure",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		},
+		{
+			"name": "scenes",
+			"label": "Scenes",
+			"path": "packs/scenes",
+			"type": "Scene",
+			"system": "pf2e",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			}
+		}
+	]
+}
